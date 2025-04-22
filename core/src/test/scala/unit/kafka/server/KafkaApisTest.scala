@@ -3994,7 +3994,6 @@ class KafkaApisTest extends Logging {
     val request = buildRequest(shareFetchRequest)
     kafkaApis = createKafkaApis(
       overrideProperties = Map(
-        ServerConfigs.UNSTABLE_API_VERSIONS_ENABLE_CONFIG -> "true",
         ShareGroupConfig.SHARE_GROUP_ENABLE_CONFIG -> "true"),
       )
     kafkaApis.handleShareFetchRequest(request)
@@ -4076,7 +4075,6 @@ class KafkaApisTest extends Logging {
     var request = buildRequest(shareFetchRequest)
     kafkaApis = createKafkaApis(
       overrideProperties = Map(
-        ServerConfigs.UNSTABLE_API_VERSIONS_ENABLE_CONFIG -> "true",
         ShareGroupConfig.SHARE_GROUP_ENABLE_CONFIG -> "true"),
       )
     kafkaApis.handleShareFetchRequest(request)
@@ -4176,7 +4174,6 @@ class KafkaApisTest extends Logging {
     var request = buildRequest(shareFetchRequest)
     kafkaApis = createKafkaApis(
       overrideProperties = Map(
-        ServerConfigs.UNSTABLE_API_VERSIONS_ENABLE_CONFIG -> "true",
         ShareGroupConfig.SHARE_GROUP_ENABLE_CONFIG -> "true"),
       )
     kafkaApis.handleShareFetchRequest(request)
@@ -4256,7 +4253,6 @@ class KafkaApisTest extends Logging {
     val request = buildRequest(shareFetchRequest)
     kafkaApis = createKafkaApis(
       overrideProperties = Map(
-        ServerConfigs.UNSTABLE_API_VERSIONS_ENABLE_CONFIG -> "true",
         ShareGroupConfig.SHARE_GROUP_ENABLE_CONFIG -> "true"),
       )
     kafkaApis.handleShareFetchRequest(request)
@@ -4332,7 +4328,6 @@ class KafkaApisTest extends Logging {
     val request = buildRequest(shareFetchRequest)
     kafkaApis = createKafkaApis(
       overrideProperties = Map(
-        ServerConfigs.UNSTABLE_API_VERSIONS_ENABLE_CONFIG -> "true",
         ShareGroupConfig.SHARE_GROUP_ENABLE_CONFIG -> "true"),
       )
     kafkaApis.handleShareFetchRequest(request)
@@ -4395,7 +4390,6 @@ class KafkaApisTest extends Logging {
     val request = buildRequest(shareFetchRequest)
     kafkaApis = createKafkaApis(
       overrideProperties = Map(
-        ServerConfigs.UNSTABLE_API_VERSIONS_ENABLE_CONFIG -> "true",
         ShareGroupConfig.SHARE_GROUP_ENABLE_CONFIG -> "true"),
       )
     kafkaApis.handleShareFetchRequest(request)
@@ -4449,7 +4443,6 @@ class KafkaApisTest extends Logging {
     val request = buildRequest(shareFetchRequest)
     kafkaApis = createKafkaApis(
       overrideProperties = Map(
-        ServerConfigs.UNSTABLE_API_VERSIONS_ENABLE_CONFIG -> "true",
         ShareGroupConfig.SHARE_GROUP_ENABLE_CONFIG -> "true"),
       )
     kafkaApis.handleShareFetchRequest(request)
@@ -4518,7 +4511,6 @@ class KafkaApisTest extends Logging {
     // First share fetch request is to establish the share session with the broker.
     kafkaApis = createKafkaApis(
       overrideProperties = Map(
-        ServerConfigs.UNSTABLE_API_VERSIONS_ENABLE_CONFIG -> "true",
         ShareGroupConfig.SHARE_GROUP_ENABLE_CONFIG -> "true"),
       )
     kafkaApis.handleShareFetchRequest(request)
@@ -4608,7 +4600,6 @@ class KafkaApisTest extends Logging {
     // First share fetch request is to establish the share session with the broker.
     kafkaApis = createKafkaApis(
       overrideProperties = Map(
-        ServerConfigs.UNSTABLE_API_VERSIONS_ENABLE_CONFIG -> "true",
         ShareGroupConfig.SHARE_GROUP_ENABLE_CONFIG -> "true"),
       )
     kafkaApis.handleShareFetchRequest(request)
@@ -4752,7 +4743,6 @@ class KafkaApisTest extends Logging {
     // First share fetch request is to establish the share session with the broker.
     kafkaApis = createKafkaApis(
       overrideProperties = Map(
-        ServerConfigs.UNSTABLE_API_VERSIONS_ENABLE_CONFIG -> "true",
         ShareGroupConfig.SHARE_GROUP_ENABLE_CONFIG -> "true"),
       )
     kafkaApis.handleShareFetchRequest(request)
@@ -5075,7 +5065,6 @@ class KafkaApisTest extends Logging {
     // First share fetch request is to establish the share session with the broker.
     kafkaApis = createKafkaApis(
       overrideProperties = Map(
-        ServerConfigs.UNSTABLE_API_VERSIONS_ENABLE_CONFIG -> "true",
         ShareGroupConfig.SHARE_GROUP_ENABLE_CONFIG -> "true"),
       )
     kafkaApis.handleShareFetchRequest(request)
@@ -5417,7 +5406,6 @@ class KafkaApisTest extends Logging {
     // First share fetch request is to establish the share session with the broker.
     kafkaApis = createKafkaApis(
       overrideProperties = Map(
-        ServerConfigs.UNSTABLE_API_VERSIONS_ENABLE_CONFIG -> "true",
         ShareGroupConfig.SHARE_GROUP_ENABLE_CONFIG -> "true"),
       )
     val fetchResult: Map[TopicIdPartition, ShareFetchResponseData.PartitionData] =
@@ -5557,7 +5545,6 @@ class KafkaApisTest extends Logging {
     // First share fetch request is to establish the share session with the broker.
     kafkaApis = createKafkaApis(
       overrideProperties = Map(
-        ServerConfigs.UNSTABLE_API_VERSIONS_ENABLE_CONFIG -> "true",
         ShareGroupConfig.SHARE_GROUP_ENABLE_CONFIG -> "true"),
       )
     val fetchResult: Map[TopicIdPartition, ShareFetchResponseData.PartitionData] =
@@ -5686,7 +5673,6 @@ class KafkaApisTest extends Logging {
     // First share fetch request is to establish the share session with the broker.
     kafkaApis = createKafkaApis(
       overrideProperties = Map(
-        ServerConfigs.UNSTABLE_API_VERSIONS_ENABLE_CONFIG -> "true",
         ShareGroupConfig.SHARE_GROUP_ENABLE_CONFIG -> "true"),
       )
     val fetchResult: Map[TopicIdPartition, ShareFetchResponseData.PartitionData] =
@@ -5836,7 +5822,6 @@ class KafkaApisTest extends Logging {
     val request = buildRequest(shareFetchRequest)
     kafkaApis = createKafkaApis(
       overrideProperties = Map(
-        ServerConfigs.UNSTABLE_API_VERSIONS_ENABLE_CONFIG -> "true",
         ShareGroupConfig.SHARE_GROUP_ENABLE_CONFIG -> "true"),
       )
     val fetchResult: Map[TopicIdPartition, ShareFetchResponseData.PartitionData] =
@@ -6008,7 +5993,6 @@ class KafkaApisTest extends Logging {
     var request = buildRequest(shareFetchRequest)
     kafkaApis = createKafkaApis(
       overrideProperties = Map(
-        ServerConfigs.UNSTABLE_API_VERSIONS_ENABLE_CONFIG -> "true",
         ShareGroupConfig.SHARE_GROUP_ENABLE_CONFIG -> "true"),
       )
     kafkaApis.handleShareFetchRequest(request)
@@ -6092,7 +6076,6 @@ class KafkaApisTest extends Logging {
 
     kafkaApis = createKafkaApis(
       overrideProperties = Map(
-        ServerConfigs.UNSTABLE_API_VERSIONS_ENABLE_CONFIG -> "true",
         ShareGroupConfig.SHARE_GROUP_ENABLE_CONFIG -> "false"),
       )
     kafkaApis.handleShareFetchRequest(request)
@@ -6143,7 +6126,6 @@ class KafkaApisTest extends Logging {
     val request = buildRequest(shareFetchRequest)
     kafkaApis = createKafkaApis(
       overrideProperties = Map(
-        ServerConfigs.UNSTABLE_API_VERSIONS_ENABLE_CONFIG -> "true",
         ShareGroupConfig.SHARE_GROUP_ENABLE_CONFIG -> "true"),
       authorizer = Option(authorizer),
       )
@@ -6207,7 +6189,6 @@ class KafkaApisTest extends Logging {
     val request = buildRequest(shareFetchRequest)
     kafkaApis = createKafkaApis(
       overrideProperties = Map(
-        ServerConfigs.UNSTABLE_API_VERSIONS_ENABLE_CONFIG -> "true",
         ShareGroupConfig.SHARE_GROUP_ENABLE_CONFIG -> "true"),
       )
     kafkaApis.handleShareFetchRequest(request)
@@ -6274,7 +6255,6 @@ class KafkaApisTest extends Logging {
     val request = buildRequest(shareAcknowledgeRequest)
     kafkaApis = createKafkaApis(
       overrideProperties = Map(
-        ServerConfigs.UNSTABLE_API_VERSIONS_ENABLE_CONFIG -> "true",
         ShareGroupConfig.SHARE_GROUP_ENABLE_CONFIG -> "true"),
       )
     kafkaApis.handleShareAcknowledgeRequest(request)
@@ -6321,7 +6301,6 @@ class KafkaApisTest extends Logging {
 
     kafkaApis = createKafkaApis(
       overrideProperties = Map(
-        ServerConfigs.UNSTABLE_API_VERSIONS_ENABLE_CONFIG -> "true",
         ShareGroupConfig.SHARE_GROUP_ENABLE_CONFIG -> "false"),
       )
     kafkaApis.handleShareAcknowledgeRequest(request)
@@ -6372,7 +6351,6 @@ class KafkaApisTest extends Logging {
     val request = buildRequest(shareAcknowledgeRequest)
     kafkaApis = createKafkaApis(
       overrideProperties = Map(
-        ServerConfigs.UNSTABLE_API_VERSIONS_ENABLE_CONFIG -> "true",
         ShareGroupConfig.SHARE_GROUP_ENABLE_CONFIG -> "true"),
       authorizer = Option(authorizer),
       )
@@ -6424,7 +6402,6 @@ class KafkaApisTest extends Logging {
 
     kafkaApis = createKafkaApis(
       overrideProperties = Map(
-        ServerConfigs.UNSTABLE_API_VERSIONS_ENABLE_CONFIG -> "true",
         ShareGroupConfig.SHARE_GROUP_ENABLE_CONFIG -> "true"),
       )
     kafkaApis.handleShareAcknowledgeRequest(request)
@@ -6475,7 +6452,6 @@ class KafkaApisTest extends Logging {
 
     kafkaApis = createKafkaApis(
       overrideProperties = Map(
-        ServerConfigs.UNSTABLE_API_VERSIONS_ENABLE_CONFIG -> "true",
         ShareGroupConfig.SHARE_GROUP_ENABLE_CONFIG -> "true"),
       )
     kafkaApis.handleShareAcknowledgeRequest(request)
@@ -6524,7 +6500,6 @@ class KafkaApisTest extends Logging {
     val request = buildRequest(shareAcknowledgeRequest)
     kafkaApis = createKafkaApis(
       overrideProperties = Map(
-        ServerConfigs.UNSTABLE_API_VERSIONS_ENABLE_CONFIG -> "true",
         ShareGroupConfig.SHARE_GROUP_ENABLE_CONFIG -> "true"),
       )
     kafkaApis.handleShareAcknowledgeRequest(request)
@@ -6599,7 +6574,6 @@ class KafkaApisTest extends Logging {
     val request = buildRequest(shareAcknowledgeRequest)
     kafkaApis = createKafkaApis(
       overrideProperties = Map(
-        ServerConfigs.UNSTABLE_API_VERSIONS_ENABLE_CONFIG -> "true",
         ShareGroupConfig.SHARE_GROUP_ENABLE_CONFIG -> "true"),
       )
     kafkaApis.handleShareAcknowledgeRequest(request)
@@ -6662,7 +6636,6 @@ class KafkaApisTest extends Logging {
     val request = buildRequest(shareAcknowledgeRequest)
     kafkaApis = createKafkaApis(
       overrideProperties = Map(
-        ServerConfigs.UNSTABLE_API_VERSIONS_ENABLE_CONFIG -> "true",
         ShareGroupConfig.SHARE_GROUP_ENABLE_CONFIG -> "true"),
       )
     kafkaApis.handleShareAcknowledgeRequest(request)
@@ -6729,7 +6702,6 @@ class KafkaApisTest extends Logging {
     val request = buildRequest(shareAcknowledgeRequest)
     kafkaApis = createKafkaApis(
       overrideProperties = Map(
-        ServerConfigs.UNSTABLE_API_VERSIONS_ENABLE_CONFIG -> "true",
         ShareGroupConfig.SHARE_GROUP_ENABLE_CONFIG -> "true"),
       )
     kafkaApis.handleShareAcknowledgeRequest(request)
@@ -6797,7 +6769,6 @@ class KafkaApisTest extends Logging {
     val request = buildRequest(shareAcknowledgeRequest)
     kafkaApis = createKafkaApis(
       overrideProperties = Map(
-        ServerConfigs.UNSTABLE_API_VERSIONS_ENABLE_CONFIG -> "true",
         ShareGroupConfig.SHARE_GROUP_ENABLE_CONFIG -> "true"),
       )
     kafkaApis.handleShareAcknowledgeRequest(request)
@@ -6879,7 +6850,6 @@ class KafkaApisTest extends Logging {
 
     kafkaApis = createKafkaApis(
       overrideProperties = Map(
-        ServerConfigs.UNSTABLE_API_VERSIONS_ENABLE_CONFIG -> "true",
         ShareGroupConfig.SHARE_GROUP_ENABLE_CONFIG -> "true"),
       )
     val acknowledgeBatches = kafkaApis.getAcknowledgeBatchesFromShareFetchRequest(shareFetchRequest, topicNames, erroneous)
@@ -6945,7 +6915,6 @@ class KafkaApisTest extends Logging {
 
     kafkaApis = createKafkaApis(
       overrideProperties = Map(
-        ServerConfigs.UNSTABLE_API_VERSIONS_ENABLE_CONFIG -> "true",
         ShareGroupConfig.SHARE_GROUP_ENABLE_CONFIG -> "true"),
       )
     val acknowledgeBatches = kafkaApis.getAcknowledgeBatchesFromShareFetchRequest(shareFetchRequest, topicIdNames, erroneous)
@@ -7018,7 +6987,6 @@ class KafkaApisTest extends Logging {
 
     kafkaApis = createKafkaApis(
       overrideProperties = Map(
-        ServerConfigs.UNSTABLE_API_VERSIONS_ENABLE_CONFIG -> "true",
         ShareGroupConfig.SHARE_GROUP_ENABLE_CONFIG -> "true"),
       )
     val acknowledgeBatches = kafkaApis.getAcknowledgeBatchesFromShareAcknowledgeRequest(shareAcknowledgeRequest, topicNames, erroneous)
@@ -7085,7 +7053,6 @@ class KafkaApisTest extends Logging {
 
     kafkaApis = createKafkaApis(
       overrideProperties = Map(
-        ServerConfigs.UNSTABLE_API_VERSIONS_ENABLE_CONFIG -> "true",
         ShareGroupConfig.SHARE_GROUP_ENABLE_CONFIG -> "true"),
       )
     val acknowledgeBatches = kafkaApis.getAcknowledgeBatchesFromShareAcknowledgeRequest(shareAcknowledgeRequest, topicIdNames, erroneous)
@@ -7157,7 +7124,6 @@ class KafkaApisTest extends Logging {
 
     kafkaApis = createKafkaApis(
       overrideProperties = Map(
-        ServerConfigs.UNSTABLE_API_VERSIONS_ENABLE_CONFIG -> "true",
         ShareGroupConfig.SHARE_GROUP_ENABLE_CONFIG -> "true"),
       )
     val ackResult = kafkaApis.handleAcknowledgements(
@@ -7236,7 +7202,6 @@ class KafkaApisTest extends Logging {
 
     kafkaApis = createKafkaApis(
       overrideProperties = Map(
-        ServerConfigs.UNSTABLE_API_VERSIONS_ENABLE_CONFIG -> "true",
         ShareGroupConfig.SHARE_GROUP_ENABLE_CONFIG -> "true"),
       )
     val ackResult = kafkaApis.handleAcknowledgements(
@@ -7316,7 +7281,6 @@ class KafkaApisTest extends Logging {
 
     kafkaApis = createKafkaApis(
       overrideProperties = Map(
-        ServerConfigs.UNSTABLE_API_VERSIONS_ENABLE_CONFIG -> "true",
         ShareGroupConfig.SHARE_GROUP_ENABLE_CONFIG -> "true"),
       )
     val ackResult = kafkaApis.handleAcknowledgements(
@@ -7390,7 +7354,6 @@ class KafkaApisTest extends Logging {
 
     kafkaApis = createKafkaApis(
       overrideProperties = Map(
-        ServerConfigs.UNSTABLE_API_VERSIONS_ENABLE_CONFIG -> "true",
         ShareGroupConfig.SHARE_GROUP_ENABLE_CONFIG -> "true"),
       )
     val ackResult = kafkaApis.handleAcknowledgements(
@@ -7487,7 +7450,6 @@ class KafkaApisTest extends Logging {
     val request = buildRequest(shareAcknowledgeRequest)
     kafkaApis = createKafkaApis(
       overrideProperties = Map(
-        ServerConfigs.UNSTABLE_API_VERSIONS_ENABLE_CONFIG -> "true",
         ShareGroupConfig.SHARE_GROUP_ENABLE_CONFIG -> "true"),
       )
     val response = kafkaApis.processShareAcknowledgeResponse(responseAcknowledgeData, request)
@@ -10772,7 +10734,7 @@ class KafkaApisTest extends Logging {
   def testShareGroupHeartbeatReturnsUnsupportedVersion(): Unit = {
     val shareGroupHeartbeatRequest = new ShareGroupHeartbeatRequestData().setGroupId("group")
 
-    val requestChannelRequest = buildRequest(new ShareGroupHeartbeatRequest.Builder(shareGroupHeartbeatRequest, true).build())
+    val requestChannelRequest = buildRequest(new ShareGroupHeartbeatRequest.Builder(shareGroupHeartbeatRequest).build())
     metadataCache = new KRaftMetadataCache(brokerId, () => KRaftVersion.KRAFT_VERSION_0)
     kafkaApis = createKafkaApis()
     kafkaApis.handle(requestChannelRequest, RequestLocal.noCaching)
@@ -10787,7 +10749,7 @@ class KafkaApisTest extends Logging {
   def testShareGroupHeartbeatRequest(): Unit = {
     val shareGroupHeartbeatRequest = new ShareGroupHeartbeatRequestData().setGroupId("group")
 
-    val requestChannelRequest = buildRequest(new ShareGroupHeartbeatRequest.Builder(shareGroupHeartbeatRequest, true).build())
+    val requestChannelRequest = buildRequest(new ShareGroupHeartbeatRequest.Builder(shareGroupHeartbeatRequest).build())
 
     val future = new CompletableFuture[ShareGroupHeartbeatResponseData]()
     when(groupCoordinator.shareGroupHeartbeat(
@@ -10812,7 +10774,7 @@ class KafkaApisTest extends Logging {
   def testShareGroupHeartbeatRequestGroupAuthorizationFailed(): Unit = {
     val shareGroupHeartbeatRequest = new ShareGroupHeartbeatRequestData().setGroupId("group")
 
-    val requestChannelRequest = buildRequest(new ShareGroupHeartbeatRequest.Builder(shareGroupHeartbeatRequest, true).build())
+    val requestChannelRequest = buildRequest(new ShareGroupHeartbeatRequest.Builder(shareGroupHeartbeatRequest).build())
 
     val authorizer: Authorizer = mock(classOf[Authorizer])
     when(authorizer.authorize(any[RequestContext], any[util.List[Action]]))
@@ -10872,7 +10834,7 @@ class KafkaApisTest extends Logging {
   def testShareGroupHeartbeatRequestFutureFailed(): Unit = {
     val shareGroupHeartbeatRequest = new ShareGroupHeartbeatRequestData().setGroupId("group")
 
-    val requestChannelRequest = buildRequest(new ShareGroupHeartbeatRequest.Builder(shareGroupHeartbeatRequest, true).build())
+    val requestChannelRequest = buildRequest(new ShareGroupHeartbeatRequest.Builder(shareGroupHeartbeatRequest).build())
 
     val future = new CompletableFuture[ShareGroupHeartbeatResponseData]()
     when(groupCoordinator.shareGroupHeartbeat(
@@ -11078,7 +11040,7 @@ class KafkaApisTest extends Logging {
       ShareGroupConfig.SHARE_GROUP_ENABLE_CONFIG -> "true",
     )
 
-    val response = getReadShareGroupResponse(
+    val response = getReadShareGroupStateResponse(
       readRequestData,
       config ++ ShareCoordinatorTestConfig.testConfigMap().asScala,
       verifyNoErr = true,
@@ -11133,7 +11095,7 @@ class KafkaApisTest extends Logging {
       ShareGroupConfig.SHARE_GROUP_ENABLE_CONFIG -> "true",
     )
 
-    val response = getReadShareGroupResponse(
+    val response = getReadShareGroupStateResponse(
       readRequestData,
       config ++ ShareCoordinatorTestConfig.testConfigMap().asScala,
       verifyNoErr = false,
@@ -11181,7 +11143,7 @@ class KafkaApisTest extends Logging {
       ShareGroupConfig.SHARE_GROUP_ENABLE_CONFIG -> "true",
     )
 
-    val response = getReadShareGroupSummaryResponse(
+    val response = getReadShareGroupStateSummaryResponse(
       readSummaryRequestData,
       config ++ ShareCoordinatorTestConfig.testConfigMap().asScala,
       verifyNoErr = true,
@@ -11229,7 +11191,7 @@ class KafkaApisTest extends Logging {
       ShareGroupConfig.SHARE_GROUP_ENABLE_CONFIG -> "true",
     )
 
-    val response = getReadShareGroupSummaryResponse(
+    val response = getReadShareGroupStateSummaryResponse(
       readSummaryRequestData,
       config ++ ShareCoordinatorTestConfig.testConfigMap().asScala,
       verifyNoErr = false,
@@ -11253,7 +11215,7 @@ class KafkaApisTest extends Logging {
       ))
     )
 
-    val requestChannelRequest = buildRequest(new DescribeShareGroupOffsetsRequest.Builder(describeShareGroupOffsetsRequest, true).build())
+    val requestChannelRequest = buildRequest(new DescribeShareGroupOffsetsRequest.Builder(describeShareGroupOffsetsRequest).build())
     metadataCache = new KRaftMetadataCache(brokerId, () => KRaftVersion.KRAFT_VERSION_0)
     kafkaApis = createKafkaApis()
     kafkaApis.handle(requestChannelRequest, RequestLocal.noCaching)
@@ -11270,7 +11232,7 @@ class KafkaApisTest extends Logging {
       ))
     )
 
-    val requestChannelRequest = buildRequest(new DescribeShareGroupOffsetsRequest.Builder(describeShareGroupOffsetsRequest, true).build)
+    val requestChannelRequest = buildRequest(new DescribeShareGroupOffsetsRequest.Builder(describeShareGroupOffsetsRequest).build)
 
     val authorizer: Authorizer = mock(classOf[Authorizer])
     when(authorizer.authorize(any[RequestContext], any[util.List[Action]]))
@@ -11298,7 +11260,7 @@ class KafkaApisTest extends Logging {
       util.List.of(new DescribeShareGroupOffsetsRequestGroup().setGroupId("group").setTopics(null))
     )
 
-    val requestChannelRequest = buildRequest(new DescribeShareGroupOffsetsRequest.Builder(describeShareGroupOffsetsRequest, true).build)
+    val requestChannelRequest = buildRequest(new DescribeShareGroupOffsetsRequest.Builder(describeShareGroupOffsetsRequest).build)
 
     val authorizer: Authorizer = mock(classOf[Authorizer])
     when(authorizer.authorize(any[RequestContext], any[util.List[Action]]))
@@ -11349,7 +11311,7 @@ class KafkaApisTest extends Logging {
     val describeShareGroupOffsetsRequest = new DescribeShareGroupOffsetsRequestData()
       .setGroups(util.List.of(describeShareGroupOffsetsRequestGroup1, describeShareGroupOffsetsRequestGroup2))
 
-    val requestChannelRequest = buildRequest(new DescribeShareGroupOffsetsRequest.Builder(describeShareGroupOffsetsRequest, true).build)
+    val requestChannelRequest = buildRequest(new DescribeShareGroupOffsetsRequest.Builder(describeShareGroupOffsetsRequest).build)
 
     val futureGroup1 = new CompletableFuture[DescribeShareGroupOffsetsResponseData.DescribeShareGroupOffsetsResponseGroup]
     when(groupCoordinator.describeShareGroupOffsets(
@@ -11465,7 +11427,7 @@ class KafkaApisTest extends Logging {
     val describeShareGroupOffsetsRequest = new DescribeShareGroupOffsetsRequestData()
       .setGroups(util.List.of(describeShareGroupOffsetsRequestGroup1, describeShareGroupOffsetsRequestGroup2))
 
-    val requestChannelRequest = buildRequest(new DescribeShareGroupOffsetsRequest.Builder(describeShareGroupOffsetsRequest, true).build)
+    val requestChannelRequest = buildRequest(new DescribeShareGroupOffsetsRequest.Builder(describeShareGroupOffsetsRequest).build)
 
     // The group coordinator will only be asked for information about topics which are authorized
     val futureGroup1 = new CompletableFuture[DescribeShareGroupOffsetsResponseData.DescribeShareGroupOffsetsResponseGroup]
@@ -11634,7 +11596,7 @@ class KafkaApisTest extends Logging {
     val describeShareGroupOffsetsRequest = new DescribeShareGroupOffsetsRequestData()
       .setGroups(util.List.of(describeShareGroupOffsetsRequestGroup1, describeShareGroupOffsetsRequestGroup2))
 
-    val requestChannelRequest = buildRequest(new DescribeShareGroupOffsetsRequest.Builder(describeShareGroupOffsetsRequest, true).build)
+    val requestChannelRequest = buildRequest(new DescribeShareGroupOffsetsRequest.Builder(describeShareGroupOffsetsRequest).build)
 
     // The group coordinator is being asked for information about all topics, not just those which are authorized
     val futureGroup1 = new CompletableFuture[DescribeShareGroupOffsetsResponseData.DescribeShareGroupOffsetsResponseGroup]
@@ -11796,7 +11758,7 @@ class KafkaApisTest extends Logging {
     val describeShareGroupOffsetsRequest = new DescribeShareGroupOffsetsRequestData()
       .setGroups(util.List.of(describeShareGroupOffsetsRequestGroup1, describeShareGroupOffsetsRequestGroup2))
 
-    val requestChannelRequest = buildRequest(new DescribeShareGroupOffsetsRequest.Builder(describeShareGroupOffsetsRequest, true).build)
+    val requestChannelRequest = buildRequest(new DescribeShareGroupOffsetsRequest.Builder(describeShareGroupOffsetsRequest).build)
 
     val futureGroup1 = new CompletableFuture[DescribeShareGroupOffsetsResponseData.DescribeShareGroupOffsetsResponseGroup]
     when(groupCoordinator.describeShareGroupAllOffsets(
@@ -11889,7 +11851,7 @@ class KafkaApisTest extends Logging {
 
     val describeShareGroupOffsetsRequest = new DescribeShareGroupOffsetsRequestData
 
-    val requestChannelRequest = buildRequest(new DescribeShareGroupOffsetsRequest.Builder(describeShareGroupOffsetsRequest, true).build)
+    val requestChannelRequest = buildRequest(new DescribeShareGroupOffsetsRequest.Builder(describeShareGroupOffsetsRequest).build)
 
     val future = new CompletableFuture[DescribeShareGroupOffsetsResponseData.DescribeShareGroupOffsetsResponseGroup]
     kafkaApis = createKafkaApis(
@@ -11914,7 +11876,7 @@ class KafkaApisTest extends Logging {
 
     val describeShareGroupOffsetsRequest = new DescribeShareGroupOffsetsRequestData().setGroups(util.List.of(describeShareGroupOffsetsRequestGroup))
 
-    val requestChannelRequest = buildRequest(new DescribeShareGroupOffsetsRequest.Builder(describeShareGroupOffsetsRequest, true).build)
+    val requestChannelRequest = buildRequest(new DescribeShareGroupOffsetsRequest.Builder(describeShareGroupOffsetsRequest).build)
 
     val future = new CompletableFuture[DescribeShareGroupOffsetsResponseData.DescribeShareGroupOffsetsResponseGroup]
     when(groupCoordinator.describeShareGroupOffsets(
@@ -11943,7 +11905,7 @@ class KafkaApisTest extends Logging {
       .setGroupId("group")
       .setTopics(util.List.of(new DeleteShareGroupOffsetsRequestTopic().setTopicName("topic-1").setPartitions(util.List.of(1))))
 
-    val requestChannelRequest = buildRequest(new DeleteShareGroupOffsetsRequest.Builder(deleteShareGroupOffsetsRequest, true).build())
+    val requestChannelRequest = buildRequest(new DeleteShareGroupOffsetsRequest.Builder(deleteShareGroupOffsetsRequest).build())
     metadataCache = new KRaftMetadataCache(brokerId, () => KRaftVersion.KRAFT_VERSION_0)
     kafkaApis = createKafkaApis()
     kafkaApis.handle(requestChannelRequest, RequestLocal.noCaching)
@@ -11958,7 +11920,7 @@ class KafkaApisTest extends Logging {
       .setGroupId("group")
       .setTopics(util.List.of(new DeleteShareGroupOffsetsRequestTopic().setTopicName("topic-1").setPartitions(util.List.of(1))))
 
-    val requestChannelRequest = buildRequest(new DeleteShareGroupOffsetsRequest.Builder(deleteShareGroupOffsetsRequest, true).build)
+    val requestChannelRequest = buildRequest(new DeleteShareGroupOffsetsRequest.Builder(deleteShareGroupOffsetsRequest).build)
 
     val authorizer: Authorizer = mock(classOf[Authorizer])
     when(authorizer.authorize(any[RequestContext], any[util.List[Action]]))
@@ -12015,7 +11977,7 @@ class KafkaApisTest extends Logging {
       .setGroupId(groupId)
       .setTopics(util.List.of(deleteShareGroupOffsetsRequestTopic2))
 
-    val requestChannelRequest = buildRequest(new DeleteShareGroupOffsetsRequest.Builder(deleteShareGroupOffsetsRequestData, true).build)
+    val requestChannelRequest = buildRequest(new DeleteShareGroupOffsetsRequest.Builder(deleteShareGroupOffsetsRequestData).build)
 
     val resultFuture = new CompletableFuture[DeleteShareGroupOffsetsResponseData]
     when(groupCoordinator.deleteShareGroupOffsets(
@@ -12116,7 +12078,7 @@ class KafkaApisTest extends Logging {
       .setGroupId("group")
       .setTopics(util.List.of(deleteShareGroupOffsetsRequestTopic1, deleteShareGroupOffsetsRequestTopic2, deleteShareGroupOffsetsRequestTopic3))
 
-    val requestChannelRequest = buildRequest(new DeleteShareGroupOffsetsRequest.Builder(deleteShareGroupOffsetsRequestData, true).build)
+    val requestChannelRequest = buildRequest(new DeleteShareGroupOffsetsRequest.Builder(deleteShareGroupOffsetsRequestData).build)
 
     val resultFuture = new CompletableFuture[DeleteShareGroupOffsetsResponseData]
     when(groupCoordinator.deleteShareGroupOffsets(
@@ -12201,7 +12163,7 @@ class KafkaApisTest extends Logging {
       .setGroupId("group")
       .setTopics(util.List.of(deleteShareGroupOffsetsRequestTopic1, deleteShareGroupOffsetsRequestTopic2))
 
-    val requestChannelRequest = buildRequest(new DeleteShareGroupOffsetsRequest.Builder(deleteShareGroupOffsetsRequestData, true).build)
+    val requestChannelRequest = buildRequest(new DeleteShareGroupOffsetsRequest.Builder(deleteShareGroupOffsetsRequestData).build)
 
     when(groupCoordinator.deleteShareGroupOffsets(
       requestChannelRequest.context,
@@ -12243,7 +12205,7 @@ class KafkaApisTest extends Logging {
       .setGroupId("group")
       .setTopics(util.List.of(deleteShareGroupOffsetsRequestTopic1, deleteShareGroupOffsetsRequestTopic2))
 
-    val requestChannelRequest = buildRequest(new DeleteShareGroupOffsetsRequest.Builder(deleteShareGroupOffsetsRequestData, true).build)
+    val requestChannelRequest = buildRequest(new DeleteShareGroupOffsetsRequest.Builder(deleteShareGroupOffsetsRequestData).build)
 
     val groupCoordinatorResponse: DeleteShareGroupOffsetsResponseData = new DeleteShareGroupOffsetsResponseData()
       .setErrorCode(Errors.UNKNOWN_SERVER_ERROR.code())
@@ -12274,7 +12236,7 @@ class KafkaApisTest extends Logging {
     val deleteShareGroupOffsetsRequest = new DeleteShareGroupOffsetsRequestData()
       .setGroupId("group")
 
-    val requestChannelRequest = buildRequest(new DeleteShareGroupOffsetsRequest.Builder(deleteShareGroupOffsetsRequest, true).build)
+    val requestChannelRequest = buildRequest(new DeleteShareGroupOffsetsRequest.Builder(deleteShareGroupOffsetsRequest).build)
 
     val resultFuture = new CompletableFuture[DeleteShareGroupOffsetsResponseData]
     kafkaApis = createKafkaApis(
@@ -12328,7 +12290,7 @@ class KafkaApisTest extends Logging {
       ShareGroupConfig.SHARE_GROUP_ENABLE_CONFIG -> "true",
     )
 
-    val response = getWriteShareGroupResponse(
+    val response = getWriteShareGroupStateResponse(
       writeRequestData,
       config ++ ShareCoordinatorTestConfig.testConfigMap().asScala,
       verifyNoErr = true,
@@ -12383,7 +12345,7 @@ class KafkaApisTest extends Logging {
     when(authorizer.authorize(any[RequestContext], any[util.List[Action]]))
       .thenReturn(Seq(AuthorizationResult.DENIED).asJava, Seq(AuthorizationResult.ALLOWED).asJava)
 
-    val response = getWriteShareGroupResponse(
+    val response = getWriteShareGroupStateResponse(
       writeRequestData,
       config ++ ShareCoordinatorTestConfig.testConfigMap().asScala,
       verifyNoErr = false,
@@ -12428,7 +12390,7 @@ class KafkaApisTest extends Logging {
       ShareGroupConfig.SHARE_GROUP_ENABLE_CONFIG -> "true",
     )
 
-    val response = getDeleteShareGroupResponse(
+    val response = getDeleteShareGroupStateResponse(
       deleteRequestData,
       config ++ ShareCoordinatorTestConfig.testConfigMap().asScala,
       verifyNoErr = true,
@@ -12473,7 +12435,7 @@ class KafkaApisTest extends Logging {
       ShareGroupConfig.SHARE_GROUP_ENABLE_CONFIG -> "true",
     )
 
-    val response = getDeleteShareGroupResponse(
+    val response = getDeleteShareGroupStateResponse(
       deleteRequestData,
       config ++ ShareCoordinatorTestConfig.testConfigMap().asScala,
       verifyNoErr = false,
@@ -12519,7 +12481,7 @@ class KafkaApisTest extends Logging {
       ShareGroupConfig.SHARE_GROUP_ENABLE_CONFIG -> "true",
     )
 
-    val response = getInitializeShareGroupResponse(
+    val response = getInitializeShareGroupStateResponse(
       initRequestData,
       config ++ ShareCoordinatorTestConfig.testConfigMap().asScala,
       verifyNoErr = true,
@@ -12565,7 +12527,7 @@ class KafkaApisTest extends Logging {
       ShareGroupConfig.SHARE_GROUP_ENABLE_CONFIG -> "true",
     )
 
-    val response = getInitializeShareGroupResponse(
+    val response = getInitializeShareGroupStateResponse(
       initRequestData,
       config ++ ShareCoordinatorTestConfig.testConfigMap().asScala,
       verifyNoErr = false,
@@ -12586,7 +12548,7 @@ class KafkaApisTest extends Logging {
                                     describedGroups: util.List[ShareGroupDescribeResponseData.DescribedGroup]): ShareGroupDescribeResponse = {
     val shareGroupDescribeRequestData = new ShareGroupDescribeRequestData()
     shareGroupDescribeRequestData.groupIds.addAll(groupIds)
-    val requestChannelRequest = buildRequest(new ShareGroupDescribeRequest.Builder(shareGroupDescribeRequestData, true).build())
+    val requestChannelRequest = buildRequest(new ShareGroupDescribeRequest.Builder(shareGroupDescribeRequestData).build())
 
     val future = new CompletableFuture[util.List[ShareGroupDescribeResponseData.DescribedGroup]]()
     when(groupCoordinator.shareGroupDescribe(
@@ -12611,10 +12573,10 @@ class KafkaApisTest extends Logging {
     response
   }
 
-  def getReadShareGroupResponse(requestData: ReadShareGroupStateRequestData, configOverrides: Map[String, String] = Map.empty,
-                                verifyNoErr: Boolean = true, authorizer: Authorizer = null,
-                                readStateResult: util.List[ReadShareGroupStateResponseData.ReadStateResult]): ReadShareGroupStateResponse = {
-    val requestChannelRequest = buildRequest(new ReadShareGroupStateRequest.Builder(requestData, true).build())
+  def getReadShareGroupStateResponse(requestData: ReadShareGroupStateRequestData, configOverrides: Map[String, String] = Map.empty,
+                                     verifyNoErr: Boolean = true, authorizer: Authorizer = null,
+                                     readStateResult: util.List[ReadShareGroupStateResponseData.ReadStateResult]): ReadShareGroupStateResponse = {
+    val requestChannelRequest = buildRequest(new ReadShareGroupStateRequest.Builder(requestData).build())
 
     val future = new CompletableFuture[ReadShareGroupStateResponseData]()
     when(shareCoordinator.readState(
@@ -12640,10 +12602,10 @@ class KafkaApisTest extends Logging {
     response
   }
 
-  def getReadShareGroupSummaryResponse(requestData: ReadShareGroupStateSummaryRequestData, configOverrides: Map[String, String] = Map.empty,
-                                verifyNoErr: Boolean = true, authorizer: Authorizer = null,
-                                readStateSummaryResult: util.List[ReadShareGroupStateSummaryResponseData.ReadStateSummaryResult]): ReadShareGroupStateSummaryResponse = {
-    val requestChannelRequest = buildRequest(new ReadShareGroupStateSummaryRequest.Builder(requestData, true).build())
+  def getReadShareGroupStateSummaryResponse(requestData: ReadShareGroupStateSummaryRequestData, configOverrides: Map[String, String] = Map.empty,
+                                            verifyNoErr: Boolean = true, authorizer: Authorizer = null,
+                                            readStateSummaryResult: util.List[ReadShareGroupStateSummaryResponseData.ReadStateSummaryResult]): ReadShareGroupStateSummaryResponse = {
+    val requestChannelRequest = buildRequest(new ReadShareGroupStateSummaryRequest.Builder(requestData).build())
 
     val future = new CompletableFuture[ReadShareGroupStateSummaryResponseData]()
     when(shareCoordinator.readStateSummary(
@@ -12669,10 +12631,10 @@ class KafkaApisTest extends Logging {
     response
   }
 
-  def getWriteShareGroupResponse(requestData: WriteShareGroupStateRequestData, configOverrides: Map[String, String] = Map.empty,
-                                verifyNoErr: Boolean = true, authorizer: Authorizer = null,
-                                 writeStateResult: util.List[WriteShareGroupStateResponseData.WriteStateResult]): WriteShareGroupStateResponse = {
-    val requestChannelRequest = buildRequest(new WriteShareGroupStateRequest.Builder(requestData, true).build())
+  def getWriteShareGroupStateResponse(requestData: WriteShareGroupStateRequestData, configOverrides: Map[String, String] = Map.empty,
+                                      verifyNoErr: Boolean = true, authorizer: Authorizer = null,
+                                      writeStateResult: util.List[WriteShareGroupStateResponseData.WriteStateResult]): WriteShareGroupStateResponse = {
+    val requestChannelRequest = buildRequest(new WriteShareGroupStateRequest.Builder(requestData).build())
 
     val future = new CompletableFuture[WriteShareGroupStateResponseData]()
     when(shareCoordinator.writeState(
@@ -12698,10 +12660,10 @@ class KafkaApisTest extends Logging {
     response
   }
 
-  def getDeleteShareGroupResponse(requestData: DeleteShareGroupStateRequestData, configOverrides: Map[String, String] = Map.empty,
-                                  verifyNoErr: Boolean = true, authorizer: Authorizer = null,
-                                  deleteStateResult: util.List[DeleteShareGroupStateResponseData.DeleteStateResult]): DeleteShareGroupStateResponse = {
-    val requestChannelRequest = buildRequest(new DeleteShareGroupStateRequest.Builder(requestData, true).build())
+  def getDeleteShareGroupStateResponse(requestData: DeleteShareGroupStateRequestData, configOverrides: Map[String, String] = Map.empty,
+                                       verifyNoErr: Boolean = true, authorizer: Authorizer = null,
+                                       deleteStateResult: util.List[DeleteShareGroupStateResponseData.DeleteStateResult]): DeleteShareGroupStateResponse = {
+    val requestChannelRequest = buildRequest(new DeleteShareGroupStateRequest.Builder(requestData).build())
 
     val future = new CompletableFuture[DeleteShareGroupStateResponseData]()
     when(shareCoordinator.deleteState(
@@ -12727,10 +12689,10 @@ class KafkaApisTest extends Logging {
     response
   }
 
-  def getInitializeShareGroupResponse(requestData: InitializeShareGroupStateRequestData, configOverrides: Map[String, String] = Map.empty,
-                                      verifyNoErr: Boolean = true, authorizer: Authorizer = null,
-                                      initStateResult: util.List[InitializeShareGroupStateResponseData.InitializeStateResult]): InitializeShareGroupStateResponse = {
-    val requestChannelRequest = buildRequest(new InitializeShareGroupStateRequest.Builder(requestData, true).build())
+  def getInitializeShareGroupStateResponse(requestData: InitializeShareGroupStateRequestData, configOverrides: Map[String, String] = Map.empty,
+                                           verifyNoErr: Boolean = true, authorizer: Authorizer = null,
+                                           initStateResult: util.List[InitializeShareGroupStateResponseData.InitializeStateResult]): InitializeShareGroupStateResponse = {
+    val requestChannelRequest = buildRequest(new InitializeShareGroupStateRequest.Builder(requestData).build())
 
     val future = new CompletableFuture[InitializeShareGroupStateResponseData]()
     when(shareCoordinator.initializeState(
