@@ -3979,9 +3979,13 @@ public class GroupMetadataManager {
         String groupId,
         String instanceId,
         String memberId,
-        int memberEpoch
+        int memberEpoch,
+        boolean shutdownApplication
     ) throws ApiException {
         StreamsGroup group = streamsGroup(groupId);
+        if (shutdownApplication) {
+            group.setShutdownRequestMemberId(memberId);
+        }
         StreamsGroupHeartbeatResponseData response = new StreamsGroupHeartbeatResponseData()
             .setMemberId(memberId)
             .setMemberEpoch(memberEpoch);
@@ -4734,7 +4738,8 @@ public class GroupMetadataManager {
                 request.groupId(),
                 request.instanceId(),
                 request.memberId(),
-                request.memberEpoch()
+                request.memberEpoch(),
+                request.shutdownApplication()
             );
         } else {
             return streamsGroupHeartbeat(
