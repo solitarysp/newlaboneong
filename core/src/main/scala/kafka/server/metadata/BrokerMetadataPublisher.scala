@@ -193,6 +193,16 @@ class BrokerMetadataPublisher(
           case t: Throwable => metadataPublishingFaultHandler.handleFault("Error updating group " +
             s"coordinator with deleted partitions in $deltaName", t)
         }
+        try {
+          // Notify the share coordinator about deleted topics.
+          val deletedTopicIds = topicsDelta.deletedTopicIds()
+          if (!deletedTopicIds.isEmpty) {
+            shareCoordinator.onTopicsDeleted(topicsDelta.deletedTopicIds, RequestLocal.noCaching.bufferSupplier)
+          }
+        } catch {
+          case t: Throwable => metadataPublishingFaultHandler.handleFault("Error updating share " +
+            s"coordinator with deleted partitions in $deltaName", t)
+        }
       }
 
       // Apply configuration deltas.
